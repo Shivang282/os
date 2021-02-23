@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href="algo.css">
+</head>
+<body>
+    <div class="hero-bg">
+        <h1>
+            Sho<span>rtest Seek Tim</span>e First Disk Scheduling (SSTF)
+        </h1>
+        <p>
+            In this case request is serviced according to next shortest distance. Starting at 50, the next shortest distance would be 62 instead of 34 since it is only 12 tracks away from 62 and 16 tracks away from 34. The process would continue until all the process are taken care of. For example the next case would be to move from 62 to 64 instead of 34 since there are only 2 tracks between them and not 18 if it were to go the other way. Although this seems to be a better service being that it moved a total of 236 tracks, this is not an optimal one. There is a great chance that starvation would take place. The reason for this is if there were a lot of requests close to eachother the other requests will never be handled since the distance will always be greater.
+        </p>
+        <p><li><b>EXAMPLE : </b>Lets say we are given with the following queue ==> 95, 180, 34, 119, 11, 123, 62, 64 with the Read-write head initially at the track 50 and the tail track being at 199 let us now discuss the different algorithms.</li></p>
+        <div class="img-bg">
+        <img src="sstf.bmp" alt="SSTF image">
+        </div>
+    </div>
+</body>
+</html>

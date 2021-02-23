@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href="algo.css">
+</head>
+<body>
+    <div class="hero-bg">
+        <h1>
+            <span>SCAN Disk</span> Scheduling
+        </h1>
+        <p>
+            This approach works like an elevator does. It scans down towards the nearest end and then when it hits the bottom it scans up servicing the requests that it didn't get going down. If a request comes in after it has been scanned it will not be serviced until the process comes back down or moves back up. This process moved a total of 230 tracks. Once again this is more optimal than the previous algorithm, but it is not the best.
+        </p>
+        <p><li><b>EXAMPLE : </b>Lets say we are given with the following queue ==> 95, 180, 34, 119, 11, 123, 62, 64 with the Read-write head initially at the track 50 and the tail track being at 199 let us now discuss the different algorithms.</li></p>
+        <div class="img-bg">
+        <img src="scan.bmp" alt="SCAN image">
+        </div>
+    </div>
+</body>
+</html>
